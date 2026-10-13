@@ -1,0 +1,64 @@
+{
+  "assets": {
+    "BTC-USD": {
+      "enabled": true,
+      "live_enabled": true,
+      "target_step": 100,
+      "kalshi_series_ticker": "KXBTCD"
+    },
+    "ETH-USD": {
+      "enabled": true,
+      "live_enabled": true,
+      "target_step": 10,
+      "kalshi_series_ticker": "KXETHD"
+    },
+    "ZEC-USD": {
+      "enabled": true,
+      "live_enabled": true,
+      "target_step": 1,
+      "kalshi_series_ticker": "KXZECD"
+    },
+    "XRP-USD": {
+      "enabled": true,
+      "live_enabled": true,
+      "target_step": 0.01,
+      "kalshi_series_ticker": "KXXRPD"
+    },
+    "SOL-USD": {
+      "enabled": true,
+      "live_enabled": true,
+      "target_step": 1,
+      "kalshi_series_ticker": "KXSOLD"
+    },
+    "NEAR-USD": {
+      "enabled": true,
+      "live_enabled": true,
+      "target_step": 0.1,
+      "kalshi_series_ticker": "KXNEARD"
+    },
+    "HYPE-USD": {
+      "enabled": true,
+      "live_enabled": true,
+      "target_step": 0.1,
+      "kalshi_series_ticker": "KXHYPED"
+    },
+    "SUI-USD": {
+      "enabled": true,
+      "live_enabled": true,
+      "target_step": 0.01,
+      "kalshi_series_ticker": "KXSUID"
+    },
+    "QNT-USD": {
+      "enabled": false,
+      "live_enabled": false,
+      "target_step": 1,
+      "kalshi_series_ticker": ""
+    },
+    "USDT-USD": {
+      "enabled": false,
+      "live_enabled": false,
+      "target_step": 0.001,
+      "kalshi_series_ticker": ""
+    }
+  }
+}
