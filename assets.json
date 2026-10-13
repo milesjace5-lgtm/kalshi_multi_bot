@@ -1,0 +1,34 @@
+{
+  "assets": {
+    "ETH-USD": {
+      "enabled": true,
+      "live_enabled": true,
+      "target_step": 10,
+      "kalshi_series_ticker": "KXETHD"
+    },
+    "XRP-USD": {
+      "enabled": true,
+      "live_enabled": true,
+      "target_step": 0.01,
+      "kalshi_series_ticker": "KXXRPD"
+    },
+    "SOL-USD": {
+      "enabled": true,
+      "live_enabled": true,
+      "target_step": 1,
+      "kalshi_series_ticker": "KXSOLD"
+    },
+    "QNT-USD": {
+      "enabled": false,
+      "live_enabled": false,
+      "target_step": 1,
+      "kalshi_series_ticker": ""
+    },
+    "USDT-USD": {
+      "enabled": false,
+      "live_enabled": false,
+      "target_step": 0.001,
+      "kalshi_series_ticker": ""
+    }
+  }
+}
