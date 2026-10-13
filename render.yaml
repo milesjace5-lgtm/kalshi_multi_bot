@@ -1,0 +1,13 @@
+services:
+  - type: worker
+    name: multi-crypto-kalshi-analysis
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python multi_asset_runner.py
+    envVars:
+      - key: LIVE_TRADING
+        value: "false"
+      - key: EMERGENCY_STOP
+        value: "true"
+      - key: LOG_LEVEL
+        value: INFO

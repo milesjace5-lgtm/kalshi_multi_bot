@@ -1,0 +1,14 @@
+{
+  "assets": {
+    "BTC-USD": {"enabled": true, "target_step": 100, "kalshi_series_ticker": ""},
+    "ETH-USD": {"enabled": true, "target_step": 10, "kalshi_series_ticker": ""},
+    "ZEC-USD": {"enabled": true, "target_step": 1, "kalshi_series_ticker": ""},
+    "XRP-USD": {"enabled": true, "target_step": 0.01, "kalshi_series_ticker": ""},
+    "SOL-USD": {"enabled": true, "target_step": 1, "kalshi_series_ticker": ""},
+    "USDT-USD": {"enabled": false, "target_step": 0.001, "kalshi_series_ticker": ""},
+    "NEAR-USD": {"enabled": true, "target_step": 0.1, "kalshi_series_ticker": ""},
+    "QNT-USD": {"enabled": true, "target_step": 1, "kalshi_series_ticker": ""},
+    "HYPE-USD": {"enabled": true, "target_step": 0.1, "kalshi_series_ticker": ""},
+    "SUI-USD": {"enabled": true, "target_step": 0.01, "kalshi_series_ticker": ""}
+  }
+}
