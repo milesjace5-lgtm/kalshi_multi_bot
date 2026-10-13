@@ -1,0 +1,12 @@
+FULL PACKAGE NOTES
+
+Start command: python multi_asset_runner.py
+Global live mode is set to true in render.yaml. To stop orders immediately, set LIVE_TRADING=false or EMERGENCY_STOP=true in Render Environment and redeploy/restart.
+
+Before running: add Kalshi API credentials in Render Environment using the exact variable names documented in config.py and kalshi_client.py. Do not add secrets to GitHub.
+
+Configured candidate series: KXBTCD, KXETHD, KXZECD, KXXRPD, KXSOLD, KXNEARD, KXHYPED, KXSUID. Market discovery still validates actual open contracts and settlement parsing; unsupported/no-match assets should skip. QNT and USDT remain disabled.
+
+The portfolio gate is shared across workers through state/portfolio-risk.sqlite3. Use persistent disk mounted at /opt/render/project/src/state to preserve the ledger across restarts.
+
+Compile and unit tests do not constitute live exchange validation. Confirm market series, settlement rules, contract price steps, order submission behavior, and account credentials before relying on live execution.

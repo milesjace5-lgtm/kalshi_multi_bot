@@ -1,0 +1,25 @@
+services:
+  - type: worker
+    name: multi-crypto-kalshi-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python multi_asset_runner.py
+    disk:
+      name: multi-crypto-state
+      mountPath: /opt/render/project/src/state
+      sizeGB: 1
+    envVars:
+      - key: LIVE_TRADING
+        value: "false"
+      - key: EMERGENCY_STOP
+        value: "true"
+      - key: BALANCE_USE
+        value: "1.0"
+      - key: MAX_ACCOUNT_EXPOSURE
+        value: "1.0"
+      - key: PORTFOLIO_MAX_TRADES_PER_HOUR
+        value: "3"
+      - key: PORTFOLIO_CASH_FRACTION
+        value: "0.25"
+      - key: LOG_LEVEL
+        value: INFO
